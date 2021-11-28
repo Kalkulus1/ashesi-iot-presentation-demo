@@ -20,6 +20,11 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+.env
+
+*.pem.crt
+*.pem.key
+output.json
 
 # Include override files you do wish to add to version control using negated pattern
 #
