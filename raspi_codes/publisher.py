@@ -101,7 +101,7 @@ while True:
         # topic: temperature # Publishing Temperature values
         mqttc.publish("test", paylodmsg_json, qos=1)
         # Print sent temperature msg on console
-        print("msg sent: test-topic")
+        print("msg sent to topic: test")
         print(paylodmsg_json)
 
     else:
