@@ -39,3 +39,4 @@ mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQ
 mqttc.connect(awshost, awsport, keepalive=60)               # connect to aws server
  
 mqttc.loop_forever()                                        # Start receiving in loop
+
