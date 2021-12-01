@@ -28,11 +28,11 @@ awsport = 8883                                              # Port no.
 clientId = "test_Client"                                     # Thing_Name
 thingName = "test_Client"                                    # Thing_Name
 # Root_CA_Certificate_Name
-caPath = "/home/pi/iot-presentation-demo/certs/AmazonRootCA1.pem"
+caPath = "/home/pi/iot-presentation-demo/certificates/AmazonRootCA1.pem"
 # <Thing_Name>.cert.pem
-certPath = "/home/pi/iot-presentation-demo/certs/certificate.pem.crt"
+certPath = "/home/pi/iot-presentation-demo/certificates/certificate.pem.crt"
 # <Thing_Name>.private.key
-keyPath = "/home/pi/iot-presentation-demo/certs/private.pem.key"
+keyPath = "/home/pi/iot-presentation-demo/certificates/private.pem.key"
 
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)      
  
