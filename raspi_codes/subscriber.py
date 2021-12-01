@@ -22,29 +22,17 @@ mqttc.on_connect = on_connect                               # assign on_connect 
 mqttc.on_message = on_message                               # assign on_message func
 #mqttc.on_log = on_log
 
-# #### Change following parameters ####
-# awshost = "a1155j671mrmyi-ats.iot.us-east-1.amazonaws.com"      # Endpoint
-# awsport = 8883                                              # Port no.
-# clientId = "test_Client"                                     # Thing_Name
-# thingName = "test_Client"                                    # Thing_Name
-# # Root_CA_Certificate_Name
-# caPath = "/home/pi/iot/AmazonRootCA1.pem"
-# # <Thing_Name>.cert.pem
-# certPath = "/home/pi/iot/certificate.pem.crt"
-# # <Thing_Name>.private.key
-# keyPath = "/home/pi/iot/private.pem.key"                         # <Thing_Name>.private.key
-
 #### Change following parameters ####
 awshost = "a1155j671mrmyi-ats.iot.us-east-1.amazonaws.com"      # Endpoint
 awsport = 8883                                              # Port no.
 clientId = "test_Client"                                     # Thing_Name
 thingName = "test_Client"                                    # Thing_Name
 # Root_CA_Certificate_Name
-caPath = "/home/kalkulus/Documents/Work/Personal/Presentations/Ashesi/IoT/certs/AmazonRootCA1.pem"
+caPath = "/home/pi/iot-presentation-demo/certs/AmazonRootCA1.pem"
 # <Thing_Name>.cert.pem
-certPath = "/home/kalkulus/Documents/Work/Personal/Presentations/Ashesi/IoT/certs/certificate.pem.crt"
+certPath = "/home/pi/iot-presentation-demo/certs/certificate.pem.crt"
 # <Thing_Name>.private.key
-keyPath = "/home/kalkulus/Documents/Work/Personal/Presentations/Ashesi/IoT/certs/private.pem.key"
+keyPath = "/home/pi/iot-presentation-demo/certs/private.pem.key"
 
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)      
  
